@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/shgao/workplace/test/kili/build-environment_in_use/rbe/64bit/rbe/tip/src/avt/gentoo/modules/apache/extraweb'
+let g:netrw_dirhist_2='/home/shgao/workplace/test/kili/build-environment_in_use/rbe/64bit/rbe/tip/src/avt/gentoo'
+let g:netrw_dirhist_3='/home/shgao/workplace/test/kili/build-environment_in_use/rbe/64bit/rbe/tip/src/avt/gentoo/policy/server'
+let g:netrw_dirhist_4='/home/shgao/workplace/test/kili/build-environment_in_use/rbe/64bit/rbe/tip/src/avt/gentoo/modules/apache/extraweb'
+let g:netrw_dirhist_5='/home/shgao/workplace/Firmware/EXSeriesVPN/kili/build-environment/rbe/64bit/rbe/tip/src/avt/gentoo'
+let g:netrw_dirhist_6='/home/shgao/workplace/Firmware/EXSeriesVPN/kili/build-environment/rbe/64bit/rbe/tip/src/avt/gentoo/policy/server'
