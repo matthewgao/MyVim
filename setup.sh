@@ -27,4 +27,5 @@ echo "After the installation complete it will quit automatically" >> matthewgao
 echo "Please wait for a moment...." >> matthewgao
 vim matthewgao -c "BundleInstall" -c "q" -c "q"
 rm matthewgao
+rm -rf MyVim
 echo "ALL Done!"
