@@ -23,6 +23,9 @@ Bundle 'L9'
 Bundle 'FuzzyFinder'
  " non github repos ，非git的访问地址的，格式如下：
 Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'Auto-Pairs'
+Bundle 'The-NERD-Commenter'
+
  " ...
 "Bundle 'ctrlp.vim'
 Plugin 'ctrlp.vim'
@@ -49,7 +52,33 @@ set ruler
 set showcmd
 " 高亮搜索
 set hlsearch
+" 跟随搜索
+set incsearch
 set mouse=a
+set linebreak
+set mousemodel=popup
+
+set autowrite
+set cmdheight=2
+" 去掉输入错的提示音
+set noeb
+set ignorecase
+set wildmenu
+"FIXME 允许backspace和光标跨越行边界
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
+set linespace=0
+set wildmenu
+
+filetype on
+filetype plugin on
+set completeopt=preview,menu
+set completeopt=longest,menu"tab替换成空格
+nmap tt :%s/\t/    /g<CR>
+
+map <F3> :NERDTreeToggle<CR>
+imap <F3> <ESC> :NERDTreeToggle<CR>
+map <silent> <F9> :TlistToggle <CR>
 
 if version>=603
     set helplang=cn
@@ -57,5 +86,9 @@ if version>=603
 endif
 let Tlist_Auto_Open=1
 let Tlist_Exit_OnlyWindow=1
+let Tlist_Use_Right_Window=1
 
+let NERDTreeIgnore=['\.pyc']
 
+" crtlp setting
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.png,*.jpg,*.gif   " Mac/Linux
