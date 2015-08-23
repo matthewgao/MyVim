@@ -22,8 +22,8 @@ mv -f ~/.vimrc ~/.vimrc_old
 mv -f ~/MyVim/vimrc .vimrc ~/
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 echo "Installing Bundle program, please wati for a while" > matthewgao
-echo "安装完毕将自动退出" >> matthewgao
-echo "请耐心等待" >> matthewgao
+echo "After the installation complete it will quit automatically" >> matthewgao
+echo "Please wait for a moment...." >> matthewgao
 vim matthewgao -c "BundleInstall" -c "q" -c "q"
 rm matthewgao
 echo "ALL Done!"
