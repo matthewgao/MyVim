@@ -49,6 +49,7 @@ set expandtab
 set autoindent
 set nu
 set ruler
+colorscheme molokai
 set showcmd
 " 高亮搜索
 set hlsearch
