@@ -17,9 +17,10 @@ sudo ln -s /usr/bin/ctags /usr/local/bin/ctags
 mv -f ~/vim ~/vim_old
 cd ~/ && git clone https://github.com/matthewgao/MyVim.git
 mv -f ~/.vim ~/.vim_old
-mv -f ~/MyVim/vim ~/.vim
+mkdir .vim
+cp -R ~/MyVim/vim/* ~/.vim
 mv -f ~/.vimrc ~/.vimrc_old
-mv -f ~/MyVim/vimrc  ~/.vimrc
+cp ~/MyVim/vimrc  ~/.vimrc
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 echo "Installing Bundle program, please wati for a while" > matthewgao
 echo "After the installation complete it will quit automatically" >> matthewgao
