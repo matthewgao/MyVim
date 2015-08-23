@@ -2,8 +2,11 @@ MyVim
 =====
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/matthewgao/MyVim?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-store my vim configuration
+My Vim configuration, support
+* MacOS
+* Linux
 
+## Setup
 To setup automatically, please run:
 
 ~~~
@@ -11,7 +14,7 @@ wget -qO- https://raw.github.com/matthewgao/MyVim/master/setup.sh | sh -x
 ~~~
 
 ## 安装中文Help doc
-下载的 tar.gz 包括所有翻译过的 vim 文档 (.cnx 文件)。
+下载的 tar.gz 包括所有翻译过的 vim 文档 (.cnx 文件)
 先将其解压缩：
 
 ~~~
