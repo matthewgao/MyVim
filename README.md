@@ -13,7 +13,7 @@ To setup automatically, please run:
 wget -qO- https://raw.github.com/matthewgao/MyVim/master/setup.sh | sh -x
 ~~~
 
-## 安装中文Help doc
+## 安装中文Help doc(Now Integrated to setup.sh)
 下载的 tar.gz 包括所有翻译过的 vim 文档 (.cnx 文件)
 先将其解压缩：
 
