@@ -62,7 +62,8 @@ set incsearch
 set mouse=a
 set linebreak
 set mousemodel=popup
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
+set laststatus=2    " 启动显示状态行(1),总是显示状态行(2)
+"set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
 
 set autowrite
 set cmdheight=2
