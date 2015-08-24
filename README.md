@@ -6,6 +6,27 @@ My Vim configuration, support
 * MacOS
 * Linux
 
+## Caution
+neocomplete需要lua支持，而默认的OSX Vim不包含lua，所以可能需要你手动卸载老的Vim
+
+~~~
+brew uninstall vim
+~~~
+然后再运行安装脚本
+
+如果要手动处理，可以参照如下：
+
+通过homebrew安装macvim:
+
+~~~
+brew install macvim --with-cscope --with-lua --HEAD
+~~~
+通过homebrew安装vim:
+
+~~~
+brew install vim --with-lua
+~~~
+
 ## Setup
 To setup automatically, please run:
 
