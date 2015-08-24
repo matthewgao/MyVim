@@ -22,10 +22,6 @@ cp -R ~/MyVim/vim/* ~/.vim
 mv -f ~/.vimrc ~/.vimrc_old
 cp ~/MyVim/vimrc  ~/.vimrc
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-echo "Installing Bundle program, please wati for a while" > remove_me
-echo "After the installation complete it will quit automatically" >> remove_me
-echo "Please wait for a moment...." >> remove_me
-vim remove_me -c "BundleInstall" -c "q" -c "q"
-rm remove_me
+vim  -c "BundleInstall" -c "q" -c "q"
 rm -rf MyVim
 echo "ALL Done!"
