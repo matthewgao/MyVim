@@ -47,7 +47,7 @@ brew install vim --with-lua
 To setup automatically, please run:
 
 ~~~
-wget -qO- https://raw.github.com/matthewgao/MyVim/master/setup.sh | sh -x
+wget -qO- https://raw.github.com/matthewgao/MyVim/master/setup.sh | sh
 ~~~
 
 ## 安装中文Help doc(Now Integrated to setup.sh)
