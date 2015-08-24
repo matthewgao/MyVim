@@ -1,22 +1,22 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-#msg() {
-#    printf '%b\n' "$1" >&2
-#}
-#
-#success() {
-#    if [ "$ret" -eq '0' ]; then
-#        msg "\33[32m[✔]\33[0m ${1}${2}"
-#    fi
-#}
-#
-#error() {
-#    msg "\33[31m[✘]\33[0m ${1}${2}"
-#    exit 1
-#}
+msg() {
+    printf '%b\n' "$1" >&2
+}
 
-#ret="$?"
-echo "Installing....., Please wait for a moment"
+success() {
+    if [ "$ret" -eq '0' ]; then
+        msg "\33[32m[✔]\33[0m ${1}${2}"
+    fi
+}
+
+error() {
+    msg "\33[31m[✘]\33[0m ${1}${2}"
+    exit 1
+}
+
+ret="$?"
+success "Installing....., Please wait for a moment"
 if which apt-get >/dev/null; then
     sudo apt-get install -y vim vim-gnome ctags xclip astyle python-setuptools python-dev git
 elif which yum >/dev/null; then
