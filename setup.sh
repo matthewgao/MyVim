@@ -9,7 +9,8 @@ fi
 ##Add HomeBrew support on  Mac OS
 if which brew >/dev/null;then
     echo "You are using HomeBrew tool"
-    brew install vim ctags git astyle
+    brew install vim --with-lua
+    brew install ctags git astyle
 fi
 
 sudo easy_install -ZU autopep8 
