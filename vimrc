@@ -28,6 +28,7 @@ Bundle 'The-NERD-Commenter'
 "Bundle 'Valloric/YouCompleteMe'
 Bundle 'tacahiroy/ctrlp-funky'
 Bundle 'vim-airline'
+Bunlde 'Lokaltog/vim-powerline'
 
  " ...
 "Bundle 'ctrlp.vim'
