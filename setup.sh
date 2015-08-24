@@ -21,6 +21,7 @@ mkdir .vim
 cp -R ~/MyVim/vim/* ~/.vim
 mv -f ~/.vimrc ~/.vimrc_old
 cp ~/MyVim/vimrc  ~/.vimrc
+~/MyVim/vimcdoc-1.9.0/vimcdoc.sh -i
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 vim  -c "BundleInstall" -c "q" -c "q"
 rm -rf MyVim
