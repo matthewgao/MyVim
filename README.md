@@ -6,6 +6,22 @@ My Vim configuration, support
 * MacOS
 * Linux
 
+## Plugins
+
+* Bundle
+* FuzzyFinder
+* L9
+* tagslist
+* ctags
+* NERDtree
+* NERD-Commenter
+* Auto-pair
+* Ctrlp
+* ctrlp-funky
+* airline
+* powerline
+* molokai colorscheme
+
 ## Caution
 neocomplete需要lua支持，而默认的OSX Vim不包含lua，所以可能需要你手动卸载老的Vim
 
