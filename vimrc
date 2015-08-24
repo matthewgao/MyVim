@@ -25,7 +25,7 @@ Bundle 'FuzzyFinder'
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'Auto-Pairs'
 Bundle 'The-NERD-Commenter'
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
 Bundle 'tacahiroy/ctrlp-funky'
 Bundle 'vim-airline'
 
