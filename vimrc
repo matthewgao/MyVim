@@ -27,6 +27,7 @@ Bundle 'Auto-Pairs'
 Bundle 'The-NERD-Commenter'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'tacahiroy/ctrlp-funky'
+Bundle 'vim-airline'
 
  " ...
 "Bundle 'ctrlp.vim'
