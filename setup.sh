@@ -25,10 +25,10 @@ fi
 
 ##Add HomeBrew support on  Mac OS
 if which brew >/dev/null;then
-    echo "You are using HomeBrew tool"
+    success "You are using HomeBrew tool"
     brew install vim --with-lua
     brew install ctags git astyle
-    echo "Install successfully"
+    success "Install successfully"
 fi
 
 sudo easy_install -ZU autopep8 
@@ -44,4 +44,4 @@ cd ~/MyVim/vimcdoc-1.9.0/ && ./vimcdoc.sh -i
 cd ~/ && git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 vim  -c "BundleInstall" -c "q" -c "q"
 rm -rf MyVim
-echo "ALL Set!"
+success "ALL Set!"
