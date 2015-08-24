@@ -32,8 +32,8 @@ Bundle 'Lokaltog/vim-powerline'
 
  " ...
 "Bundle 'ctrlp.vim'
-Plugin 'ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
+Bundle 'ctrlp.vim'
+Bundle 'scrooloose/nerdtree'
 filetype plugin indent on     " required!
 "
 " Brief help
