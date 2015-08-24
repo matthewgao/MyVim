@@ -1,10 +1,20 @@
 #!/bin/bash
 
+msg() {
+    printf '%b\n' "$1" >&2
+}
+
 success() {
     if [ "$ret" -eq '0' ]; then
         msg "\33[32m[✔]\33[0m ${1}${2}"
     fi
 }
+
+error() {
+    msg "\33[31m[✘]\33[0m ${1}${2}"
+    exit 1
+}
+
 
 success "Installing....., Please wait for a moment"
 if which apt-get >/dev/null; then
