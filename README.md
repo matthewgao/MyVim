@@ -43,7 +43,7 @@ brew install macvim --with-cscope --with-lua --HEAD
 brew install vim --with-lua
 ~~~
 
-## Setup
+## Installation
 To setup automatically, please run:
 
 ~~~
