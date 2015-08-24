@@ -15,7 +15,7 @@ error() {
     exit 1
 }
 
-
+ret="$?"
 success "Installing....., Please wait for a moment"
 if which apt-get >/dev/null; then
     sudo apt-get install -y vim vim-gnome ctags xclip astyle python-setuptools python-dev git
