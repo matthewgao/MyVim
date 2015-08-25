@@ -231,7 +231,8 @@ let python_highlight_all=1
 "powerline config
 "let g:Powerline_symbols='fancy'
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
+"改变tag的外观，如果不想要有箭头方式，可以不要注释如下两行
+"let g:airline#extensions#tabline#left_sep = ' '
+"let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline_powerline_fonts = 1
 
