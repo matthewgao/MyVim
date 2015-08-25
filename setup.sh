@@ -39,6 +39,11 @@ else
     error "Install Vim and other tools FAIL!"
 fi
 
+#INSTALL POWERLINE FONT
+git clone https://github.com/powerline/fonts.git && ~/fonts/install.sh 
+ret="$?"
+success "Install powerline fonts done, you HAVE to CHANGE YOUR TERMINAL FONT TO POWERLINE SPECIFIED ONE AFTER INSTALLATION COMPLETE"
+
 #Backup old config, and cp the new config to the right place.
 sudo easy_install -ZU autopep8 
 sudo ln -s /usr/bin/ctags /usr/local/bin/ctags
