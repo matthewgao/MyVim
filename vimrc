@@ -224,3 +224,6 @@ let g:solarized_termtrans=1
 let g:solarized_contrast="normal"
 let g:solarized_visibility="normal"
 " let g:solarized_termcolors=256
+
+"python-syntax config
+let python_highlight_all = 1
