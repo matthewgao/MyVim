@@ -35,6 +35,7 @@ Bundle 'pyflakes.vim'
 
 Bundle 'ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'altercation/vim-colors-solarized'
 "
 " Brief help
 " :BundleList          - list configured bundles
@@ -214,3 +215,12 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+"molokai
+let g:molokai_original = 1
+
+"solarized
+let g:solarized_termtrans=1
+let g:solarized_contrast="normal"
+let g:solarized_visibility="normal"
+" let g:solarized_termcolors=256
