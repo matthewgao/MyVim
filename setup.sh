@@ -48,7 +48,8 @@ if [ ! -d ~/.vim_old ]; then
     ret="$?"
     success "Backup ./.vim successfully"
 else
-    mv -f ~/.vim ~/.vim_old && mkdir ~/.vim
+    mv -f ~/.vim ~/.vim_old 
+    mkdir ~/.vim
     echo "~/.vim_old already existed, skip....."
 fi
 
