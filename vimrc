@@ -26,8 +26,8 @@ Bundle 'Auto-Pairs'
 Bundle 'The-NERD-Commenter'
 "Bundle 'Valloric/YouCompleteMe'
 Bundle 'tacahiroy/ctrlp-funky'
-Bundle 'vim-airline'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
+"Bundle 'Lokaltog/vim-powerline'
 "Bundle 'minibufexpl.vim'
 Bundle 'rainbow_parentheses.vim'
 Bundle 'python-syntax'
@@ -224,3 +224,14 @@ let g:solarized_termtrans=1
 let g:solarized_contrast="normal"
 let g:solarized_visibility="normal"
 " let g:solarized_termcolors=256
+
+"python syntax config
+let python_highlight_all=1
+
+"powerline config
+"let g:Powerline_symbols='fancy'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline_powerline_fonts = 1
+
