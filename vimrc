@@ -1,6 +1,5 @@
 set nocompatible               " be iMproved
 set shell=/bin/sh
-filetype off                   " required!
 syntax on
 syntax enable
 
@@ -13,15 +12,15 @@ call vundle#rc()
 "这是vundle本身的设置
 Bundle 'gmarik/vundle'  
  
- " My Bundles here:
- "这里是设置你自己自定义的插件的设置vundle设置，注意：下载的插件git为：https://github.com/godlygeek/tabular.git，则设置为Bundle 'godlygeek/tabular';https://github.com/gmarik/vundle.git设置则为 Bundle 'gmarik/vundle'  
- " original repos on github
+" My Bundles here:
+"这里是设置你自己自定义的插件的设置vundle设置，注意：下载的插件git为：https://github.com/godlygeek/tabular.git，则设置为Bundle 'godlygeek/tabular';https://github.com/gmarik/vundle.git设置则为 Bundle 'gmarik/vundle'  
+" original repos on github
 Bundle 'godlygeek/tabular'
 
- " vim-scripts repos，vim-scripts的访问地址，格式则如下：
+" vim-scripts repos，vim-scripts的访问地址，格式则如下：
 Bundle 'L9'
 Bundle 'FuzzyFinder'
- " non github repos ，非git的访问地址的，格式如下：
+" non github repos ，非git的访问地址的，格式如下：
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'Auto-Pairs'
 Bundle 'The-NERD-Commenter'
@@ -29,12 +28,13 @@ Bundle 'The-NERD-Commenter'
 Bundle 'tacahiroy/ctrlp-funky'
 Bundle 'vim-airline'
 Bundle 'Lokaltog/vim-powerline'
+"Bundle 'minibufexpl.vim'
+Bundle 'rainbow_parentheses.vim'
+Bundle 'python-syntax'
+Bundle 'pyflakes.vim'
 
- " ...
-"Bundle 'ctrlp.vim'
 Bundle 'ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
-filetype plugin indent on     " required!
 "
 " Brief help
 " :BundleList          - list configured bundles
@@ -44,7 +44,7 @@ filetype plugin indent on     " required!
 "
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
-
+set t_Co=256
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -53,6 +53,7 @@ set expandtab
 set autoindent
 set nu
 set ruler
+set background=dark
 colorscheme molokai
 set showcmd
 " 高亮搜索
@@ -79,6 +80,8 @@ set wildmenu
 
 filetype on
 filetype plugin on
+filetype plugin indent on     " required!
+
 set completeopt=preview,menu
 set completeopt=longest,menu"tab替换成空格
 nmap tt :%s/\t/    /g<CR>
@@ -180,3 +183,28 @@ func SetTitle()
 	endif
 	"新建文件后，自动定位到文件末尾
 endfunc
+
+"rainbow_parentheses Config
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['black',       'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
