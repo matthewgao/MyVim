@@ -1,4 +1,4 @@
-MyVim
+MyVim v0.5
 =====
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/matthewgao/MyVim?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -12,6 +12,7 @@ To setup automatically, please run:
 ~~~
 wget -qO- https://raw.github.com/matthewgao/MyVim/master/setup.sh | sh
 ~~~
+--NOTICE:--To make the airline show perfect, you can change the font of Terminal to a powerline support one.
 
 ## Plugins
 
@@ -46,6 +47,7 @@ brew uninstall vim
 
 ~~~
 brew install macvim --with-cscope --with-lua --HEAD
+brew linkapps macvim
 ~~~
 通过homebrew安装vim:
 
