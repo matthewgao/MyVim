@@ -83,6 +83,6 @@ cd ~/ && git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 #success "Successfully clone vundle.git"
 ##Install Bundle plugins, todo list is in the .vimrc 
 vim  -c "BundleInstall" -c "qa"
-rm -rf MyVim
+rm -rf MyVim fonts
 ret="$?"
 success "ALL Set!, Start your Vim adventure~"
