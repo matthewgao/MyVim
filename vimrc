@@ -46,6 +46,10 @@ Bundle 'altercation/vim-colors-solarized'
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
 set t_Co=256
+" 显示当前列
+set cuc
+set textwidth=80
+set cc=+1
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
