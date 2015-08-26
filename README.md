@@ -34,7 +34,16 @@ wget -qO- https://raw.github.com/matthewgao/MyVim/master/setup.sh | sh
 * molokai colorscheme
 
 ## Caution
-neocomplete需要lua支持，而默认的OSX Vim不包含lua，所以可能需要你手动卸载老的Vim
+neocomplete需要lua支持，而默认的OSX Vim不包含lua，所以可能需要你手动卸载老的Vim, 我们的脚本会自动安装带有lua版本的
+
+###Ubuntu
+如果你在使用ubuntu12.04甚至更老的version, 你需要手动下载vim源码并编译
+
+~~~
+./configure --with-lua
+make && make install
+~~~
+我会努力把这部分功能自动化
 
 ~~~
 brew uninstall vim
