@@ -40,7 +40,7 @@ else
 fi
 
 #INSTALL POWERLINE FONT
-git clone https://github.com/powerline/fonts.git && ~/fonts/install.sh 
+cd ~/ && git clone https://github.com/powerline/fonts.git && ~/fonts/install.sh 
 ret="$?"
 success "Install powerline fonts done, you HAVE to CHANGE YOUR TERMINAL FONT TO POWERLINE SPECIFIED ONE AFTER INSTALLATION COMPLETE"
 
