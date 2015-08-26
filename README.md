@@ -12,7 +12,7 @@ To setup automatically, please run:
 ~~~
 wget -qO- https://raw.github.com/matthewgao/MyVim/master/setup.sh | sh
 ~~~
-***NOTICE:--To make the airline show perfect, you can change the font of Terminal to a powerline support one.
+**NOTICE:**To make the airline show perfect, you can change the font of Terminal to a powerline support one.
 
 ## Plugins
 
@@ -27,7 +27,7 @@ wget -qO- https://raw.github.com/matthewgao/MyVim/master/setup.sh | sh
 * Ctrlp
 * ctrlp-funky
 * airline
-* -powerline-
+* ~~powerline~~
 * translate
 * vim chinese doc
 * calendar
