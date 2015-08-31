@@ -3,7 +3,7 @@ set shell=/bin/sh
 syntax on
 syntax enable
 
-
+set guifont=Liberation\ Mono\ for\ Powerline
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
