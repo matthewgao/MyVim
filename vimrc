@@ -90,7 +90,7 @@ filetype plugin indent on     " required!
 set completeopt=preview,menu
 set completeopt=longest,menu"tab替换成空格
 nmap tt :%s/\t/    /g<CR>
-nmap <C-W> :bn<CR>
+nmap <F2> :bn<CR>
 map <F3> :NERDTreeToggle<CR>
 imap <F3> <ESC> :NERDTreeToggle<CR>
 map <silent> <F9> :TlistToggle <CR>
