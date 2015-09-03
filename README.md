@@ -1,4 +1,4 @@
-MyVim v0.5
+MyVim v0.51
 =====
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/matthewgao/MyVim?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -65,3 +65,6 @@ make && make install
 我会努力把这部分功能自动化
 ## Next Step
 reinstall vim with lua on OSX
+
+##Shortcut
+* ctrl+w 切换tags
