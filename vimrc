@@ -3,7 +3,7 @@ set shell=/bin/sh
 syntax on
 syntax enable
 
-set guifont=Liberation\ Mono\ for\ Powerline
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -31,9 +31,12 @@ Bundle 'bling/vim-airline'
 "Bundle 'minibufexpl.vim'
 Bundle 'rainbow_parentheses.vim'
 Bundle 'python-syntax'
-Bundle 'pyflakes.vim'
+Bundle 'syntastic'
+"Bundle 'pyflakes.vim'
 
 Bundle 'ctrlp.vim'
+"conflict with neocomplete
+"Bundle 'vim-multiple-cursors'
 Bundle 'scrooloose/nerdtree'
 Bundle 'altercation/vim-colors-solarized'
 "
@@ -90,6 +93,7 @@ filetype plugin indent on     " required!
 set completeopt=preview,menu
 set completeopt=longest,menu"tab替换成空格
 nmap tt :%s/\t/    /g<CR>
+
 nmap <F2> :bn<CR>
 map <F3> :NERDTreeToggle<CR>
 imap <F3> <ESC> :NERDTreeToggle<CR>
@@ -232,6 +236,16 @@ let g:solarized_visibility="normal"
 "python syntax config
 let python_highlight_all=1
 
+"syntastic config
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_always_auto_loc_list=1
+let g:syntastic_always_check_on_open=1
+let g:syntastic_always_check_on_wq=0
+
 "powerline config
 "let g:Powerline_symbols='fancy'
 let g:airline#extensions#tabline#enabled = 1
@@ -239,4 +253,12 @@ let g:airline#extensions#tabline#enabled = 1
 "let g:airline#extensions#tabline#left_sep = ' '
 "let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline_powerline_fonts = 1
+set guifont=Ubuntu\ Mono\ derivative\ Powerline:h14
 
+"multipe cursors config
+"let g:multi_cursor_use_default_mapping = 0
+
+"let g:multi_cursor_next_key='<c-n>'
+"let g:multi_cursor_prev_key='<c-p>'
+"let g:multi_cursor_skip_key='<c-x>'
+"let g:multi_cursor_quit_key='<Esc>'
