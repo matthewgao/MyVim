@@ -45,6 +45,12 @@ cd ~/ && git clone https://github.com/powerline/fonts.git
 ret="$?"
 success "Install powerline fonts done, you HAVE to CHANGE YOUR TERMINAL FONT TO POWERLINE SPECIFIED ONE AFTER INSTALLATION COMPLETE"
 
+if [ ! -d ~/.vim ]; then
+    mkdir ~/.vim
+    
+if [ ! -f ~/.vimrc ]; then
+    touch ~/.vimrc
+
 #Backup old config, and cp the new config to the right place.
 sudo easy_install -ZU autopep8 
 sudo ln -s /usr/bin/ctags /usr/local/bin/ctags
