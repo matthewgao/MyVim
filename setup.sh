@@ -47,9 +47,11 @@ success "Install powerline fonts done, you HAVE to CHANGE YOUR TERMINAL FONT TO 
 
 if [ ! -d ~/.vim ]; then
     mkdir ~/.vim
-    
+fi
+
 if [ ! -f ~/.vimrc ]; then
     touch ~/.vimrc
+fi
 
 #Backup old config, and cp the new config to the right place.
 sudo easy_install -ZU autopep8 
