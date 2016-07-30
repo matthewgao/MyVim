@@ -35,6 +35,11 @@ elif which brew >/dev/null;then
     brew install ctags git astyle
     ret="$?"
     success "Install vim successfully"
+elif which pacman >/dev/null; then
+    echo "You are using apt-get, installing vim vim-gnome ctags xclip astyle python-setuptools python-dev git"
+    sudo pacman -Sy vim vim-gnome ctags xclip astyle python-setuptools python-dev git
+    ret="$?"
+    success "Install vim successfully"
 else
     error "Install Vim and other tools FAIL!"
 fi
