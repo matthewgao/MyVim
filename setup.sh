@@ -36,8 +36,8 @@ elif which brew >/dev/null;then
     ret="$?"
     success "Install vim successfully"
 elif which pacman >/dev/null; then
-    echo "You are using apt-get, installing vim vim-gnome ctags xclip astyle python-setuptools python-dev git"
-    sudo pacman -S vim vim-gnome ctags xclip astyle python-setuptools python-dev git
+    echo "You are using pacman, installing vim vim-gnome ctags xclip astyle python-setuptools python-dev git"
+    sudo pacman -S vim ctags xclip astyle python-setuptools git
     ret="$?"
     success "Install vim successfully"
 else
