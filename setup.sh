@@ -31,7 +31,7 @@ elif which yum >/dev/null; then
 ##Add HomeBrew support on  Mac OS
 elif which brew >/dev/null;then
     echo "You are using HomeBrew, installing vim with lua"
-    brew install vim --with-lua
+    #brew install vim --with-lua
     brew install ctags git astyle
     ret="$?"
     success "Install vim successfully"
